@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Elitze Agentic Security — MCP & AI-Agent Security Review</title>
+<title>Elitze Agentic Security — MCP &amp; AI-Agent Security Review</title>
 <meta name="description" content="Fixed-price security review for MCP servers, LLM agent stacks, and automation pipelines by Elitze Agentic Security. Canadian, remote, Interac e-Transfer accepted.">
 <style>
   :root{
@@ -43,13 +43,18 @@
   .terms b{color:var(--gold)}
   footer{margin-top:56px;color:#6f6788;font-size:13px;border-top:1px solid var(--line);padding-top:18px}
   a{color:var(--cyan)}
+
+  .brand-sub{font-weight:500;font-size:12.5px;letter-spacing:.10em;text-transform:uppercase;color:#a79fc4;margin-left:8px}
+  .card.featured{border-color:#4c2f8a}
+  .tag.small{font-size:11px}
+  .lead.lede-sm{font-size:16px}
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <header>
-    <div class="brand">ELITZE<span>.</span> <span style="font-weight:500;font-size:12.5px;letter-spacing:.10em;text-transform:uppercase;color:#a79fc4;margin-left:8px">Agentic Security</span></div>
+    <div class="brand">ELITZE<span>.</span> <span class="brand-sub">Agentic Security</span></div>
     <div class="tag">Victoria, BC · Remote · Canada</div>
   </header>
 
@@ -76,8 +81,8 @@
         <li>Findings memo with severity + fixes</li>
       </ul>
     </div>
-    <div class="card" style="border-color:#4c2f8a">
-      <h3>Full Review <span class="tag" style="font-size:11px">most chosen</span></h3>
+    <div class="card featured">
+      <h3>Full Review <span class="tag small">most chosen</span></h3>
       <div class="price">$1,500 <small>CAD · 7–10 business days</small></div>
       <ul>
         <li>Everything in Quick Pass</li>
@@ -109,13 +114,17 @@
 
   <h2>What I actually check</h2>
   <table>
-    <tr><th>Area</th><th>Typical failure</th></tr>
-    <tr><td>MCP tool surface</td><td>Read-only claims that a mutation tool quietly violates</td></tr>
-    <tr><td>Credential binding</td><td>Tokens that work across tenants or outlive their scope</td></tr>
-    <tr><td>Confirmation flows</td><td>Replayable approvals, missing idempotency, TOCTOU gaps</td></tr>
-    <tr><td>Output scrubbing</td><td>Secrets leaked back into model context and logs</td></tr>
-    <tr><td>Supply chain</td><td>Install hooks, unpinned deps, publishes from personal accounts</td></tr>
-    <tr><td>Automation pipelines</td><td>Unattended jobs holding credentials they never need</td></tr>
+    <thead>
+      <tr><th>Area</th><th>Typical failure</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>MCP tool surface</td><td>Read-only claims that a mutation tool quietly violates</td></tr>
+      <tr><td>Credential binding</td><td>Tokens that work across tenants or outlive their scope</td></tr>
+      <tr><td>Confirmation flows</td><td>Replayable approvals, missing idempotency, TOCTOU gaps</td></tr>
+      <tr><td>Output scrubbing</td><td>Secrets leaked back into model context and logs</td></tr>
+      <tr><td>Supply chain</td><td>Install hooks, unpinned deps, publishes from personal accounts</td></tr>
+      <tr><td>Automation pipelines</td><td>Unattended jobs holding credentials they never need</td></tr>
+    </tbody>
   </table>
 
   <div class="terms">
@@ -125,14 +134,14 @@
   </div>
 
   <h2>Why me</h2>
-  <p class="lead" style="font-size:16px">
+  <p class="lead lede-sm">
     I build agent systems and then audit them — the same hands that wire an MCP server's tool
     registry also know where its authorization model cracks. Elitze Agentic Security is that work
     productised: governed agent access, evidence you can hand to an auditor, and authorized
     validation within written scope. Recent engagements include static-plus-dynamic reviews of
     shipping MCP packages, one of which is already with the vendor.
   </p>
-  <p class="lead" style="font-size:16px">
+  <p class="lead lede-sm">
     <b>Sample build you can run:</b>
     <a href="https://github.com/terrell0780/servicedesk-demo">ServiceDesk API</a> —
     FastAPI + SQLite, clients → jobs → invoices with a live outstanding balance,
